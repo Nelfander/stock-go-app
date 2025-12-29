@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  # This is our Message Broker (The Post Office)
+  redis-broker:
+    image: redis:7-alpine
+    container_name: redis-broker
+    ports:
+      - "6379:6379"
+    restart: always
